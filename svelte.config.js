@@ -1,5 +1,5 @@
 import { mdsvex } from "mdsvex";
-import adapter from '@sveltejs/adapter-cloudflare';
+import adapter from '@sveltejs/adapter-auto';
 
 const config = {
     compilerOptions: {
