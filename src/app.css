@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital@0;1&display=swap');
+
+:root {
+  --bg: #000;
+  --fg: whitesmoke;
+  --link: slategray;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Cascadia Code", monospace;
+  font-weight: 400;
+  font-optical-sizing: auto;
+}
+
+.app-center {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.figlet {
+  white-space: pre;
+  line-height: 1;
+  text-align: left;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover {
+  --link: rgb(152, 171, 192);
+}
+
+.noformat {all: unset !important;}
+
+.timesnewroman {
+  font-family: "Times New Roman", "Nimbus Roman", "Tinos", "Liberation Serif"; /* FUCK liberation serif */
+}
+
+.nosel {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.nosel:hover {
+  cursor: default;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #2a2a2a;
+  margin-bottom: 2rem;
+}
+
+br {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.center {
+  text-align: center;
+}
