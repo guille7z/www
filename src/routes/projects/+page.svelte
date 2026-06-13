@@ -1,4 +1,7 @@
 <script lang="ts">
+    export const prerender = false;
+    export const ssr = false;
+
     import Figlet from '$lib/components/Figlet.svelte';
     import { Star, GitFork } from '@lucide/svelte'
     const { data } = $props();

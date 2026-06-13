@@ -1,7 +1,7 @@
 <script>
     import Figlet from "$lib/components/Figlet.svelte";
-
 </script>
+
 <div class="app-center" style="font-size: 24px;">
 	<div>
         <Figlet>404</Figlet>
