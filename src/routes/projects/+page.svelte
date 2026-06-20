@@ -1,9 +1,6 @@
 <script lang="ts">
-    export const prerender = false;
-    export const ssr = false;
-
-    import Figlet from '$lib/components/Figlet.svelte';
-    import { Star, GitFork } from '@lucide/svelte'
+    import Figlet from "$lib/components/Figlet.svelte";
+    import { Star, GitFork } from "@lucide/svelte";
     const { data } = $props();
     const { repos, error } = data;
 </script>
@@ -11,7 +8,7 @@
 <title>projects</title>
 
 <div class="center">
-    <Figlet>projects</Figlet>
+    <Figlet text="projects" />
     <br /><br />
     <a href="/">go home</a>
 </div>
@@ -51,7 +48,9 @@
                 <div class="links">
                     <a href={repo.html_url} class="btn">repo ↗</a>
                     {#if repo.homepage}
-                        <a href={repo.homepage} class="btn btn-primary">demo ↗</a>
+                        <a href={repo.homepage} class="btn btn-primary"
+                            >demo ↗</a
+                        >
                     {/if}
                 </div>
             </div>
@@ -168,7 +167,9 @@
         border-radius: 99px;
         color: #aaa;
         text-decoration: none;
-        transition: border-color 0.2s, color 0.2s;
+        transition:
+            border-color 0.2s,
+            color 0.2s;
     }
 
     .btn:hover {

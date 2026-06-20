@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Figlet from '$lib/components/Figlet.svelte';
-    import type { PageData } from './$types.js';    
+    import Figlet from "$lib/components/Figlet.svelte";
+    import type { PageData } from "./$types.js";
 
     let { data }: { data: PageData } = $props();
 </script>
@@ -8,13 +8,13 @@
 <title>blog</title>
 
 <div class="center">
-    <Figlet>blog</Figlet>
-    <br/><br/>
+    <Figlet text="blog" />
+    <br /><br />
     <a href="/">go home</a><!-- -
     <a href="">latest post</a>-->
 </div>
 
-<br/><br/>
+<br /><br />
 {#each data.posts as post}
     <a href="/blog/{post.slug}" class="post-card">
         <h2>{post.title}</h2>
