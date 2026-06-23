@@ -34,7 +34,7 @@ You'll need [Node.js](https://nodejs.org/) and `npm` (or `pnpm`) installed.
    If you want it to open automatically in your browser:
 
    ```bash
-   npm run dev -- --open
+   npm run dev --open
    ```
 
 ## Build
