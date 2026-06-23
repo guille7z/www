@@ -45,8 +45,6 @@ To create a production build:
 npm run build
 ```
 
-This outputs a production-ready build of the site (the exact output depends on the configured SvelteKit adapter — static files, a Node server, etc.).
-
 To preview the production build locally before deploying:
 
 ```bash
